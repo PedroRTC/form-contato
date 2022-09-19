@@ -1,5 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
 *{
     margin:0;
     padding:0;
@@ -59,50 +61,65 @@ form{
     text-align: center;
     padding:20px ;
     width:300px ;
+    font-family: 'Quicksand', sans-serif;
    
 }
 
  div{
-  margin: 10px 0px;
+  margin: 20px 0px;
   text-align: left;
     
 }
 
 
-
-div label{
-    display:inline-block ;
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: gray;
-     transform: translateY(20px);
-     transition: all 0.5s;
-}
-
-
-
-
-div input{
+.input_form{
     width: 100%;
     padding: 5px 0px 5px 3px;
     outline: none;
     border:none ;
+    background-color:transparent;
     border-bottom: 1px solid aqua;
-    background-color: transparent;
-    color: white;
+    color:gainsboro;
     transition: all 0.5s;
+    
+    
 }
 
-div input:focus ~ div label{
-    transform: translateY(0px);
+
+.label_input{
+    display:inline-block ;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: gray;
+    transition: all 0.5s;
+    transform: translateY(-25px);
+   
+}
+
+.input_form:focus ~ .label_input{
+    transform: translateY(-45px);
+    color: aqua;
+    font-size: 10px;
 }
 
 
 
 
 
-form section{
+
+
+section{
     text-align: left;
+    color: white;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+section label{
+    padding:0px 5px ;
 }
 
 
@@ -111,12 +128,21 @@ form section{
 button{
    
     margin-top:30px ;
-    width: 100px;
-    height:30px ;
+    width: 130px;
+    height:35px ;
     border: none;
     background-color:aqua;
     cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    border-radius: 3px;
    
+}
+
+button:hover{
+  background-color: rgb(3, 224, 224);
 }
 
 
