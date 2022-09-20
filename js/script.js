@@ -5,15 +5,14 @@ let input_senha=document.querySelector("#input_senha")
 let label_senha=document.querySelector("#label_senha")
 let label_email=document.querySelector("#label_email")
 let form=document.querySelector("form")
-let validacao_email;
-let validacao_senha;
+let validacao_email = false;
+let validacao_senha = false;
 
 form.addEventListener("submit",Onsubmit)
 
 
 
-function Onsubmit(evt){
-    evt.preventDefault();
+
 
     input_email.addEventListener("keyup" , ()=>{
     
@@ -69,12 +68,11 @@ function Onsubmit(evt){
     })
     
 
-     if(validacao_email && validacao_senha){
-          form.submit()
-     }
-
-}
-    
-
   
+function Onsubmit(evt){
+    evt.preventDefault();
 
+    if(validacao_email && validacao_senha){
+        form.submit()
+   }
+}
