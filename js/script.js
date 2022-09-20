@@ -5,6 +5,7 @@ let input_senha=document.querySelector("#input_senha")
 let label_senha=document.querySelector("#label_senha")
 let label_email=document.querySelector("#label_email")
 let form=document.querySelector("form")
+let button_login=document.querySelector("#button_login")
 let validacao_email = false;
 let validacao_senha = false;
 
@@ -73,6 +74,19 @@ function Onsubmit(evt){
     evt.preventDefault();
 
     if(validacao_email && validacao_senha){
-        form.submit()
+        let div_loading=document.createElement("div")
+        let loading=document.createElement("div")
+
+        div_loading.classList.add("div_loading")
+        loading.classList.add("loading")
+        loading.src="../img/img_loading"
+
+        div_loading.appendChild(loading)
+        window.document.body.appendChild(div_loading)
+
+        setTimeout(() => {
+            form.submit()
+        }, 5000);
+        
    }
 }
