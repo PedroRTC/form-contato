@@ -59,6 +59,7 @@ form.addEventListener("submit",Onsubmit)
             window.document.body.style.backgroundImage=`url("../img/fundo-form03.png")`
             validacao_senha=false
 
+
         }else{
             label_senha.style.color="aqua"
             label_senha.innerHTML="Password"
@@ -86,7 +87,7 @@ function Onsubmit(evt){
 
         setTimeout(() => {
             form.submit()
-        }, 5000);
+        }, 6000);
         
    }
 }

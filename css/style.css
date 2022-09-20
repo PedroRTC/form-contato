@@ -192,10 +192,13 @@ button:hover{
 
 .div_loading{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     position: absolute;
     background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loading{
@@ -203,21 +206,23 @@ button:hover{
     height: 50px;
     background-image: url("../img/img_loading.png");
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    animation: animaLoading infinite linear 2s;
+    animation: animaLoading infinite linear 1.5s;
+    border-radius: 50%;
+   
+   
 }
 
 
-@keyframes nimaLoading{
+
+
+
+@keyframes animaLoading{
     0%{
-        transform: scale(1.3);
+        transform: scale(1.3) rotateZ(360deg);
     }
 
     100%{
-        transform: scale(1);
+        transform: scale(1) rotateZ(0deg);
     }
 }
 
