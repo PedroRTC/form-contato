@@ -25,7 +25,7 @@ form.addEventListener("submit",Onsubmit)
             window.document.body.style.backgroundImage=`url("../img/fundo-form02.png")`
             validacao_email=false
 
-        } else if(input_email.value.length < 10 || !input_email.value.includes("@")){
+        } else if(input_email.value.length < 10 || !input_email.value.includes("@") || !input_email.value.includes(".com")){
             label_email.style.color="red"
             label_email.innerHTML="*email invalido "
             input_email.style.borderColor="red"
@@ -59,6 +59,7 @@ form.addEventListener("submit",Onsubmit)
             window.document.body.style.backgroundImage=`url("../img/fundo-form03.png")`
             validacao_senha=false
 
+
         }else{
             label_senha.style.color="aqua"
             label_senha.innerHTML="Password"
@@ -86,7 +87,7 @@ function Onsubmit(evt){
 
         setTimeout(() => {
             form.submit()
-        }, 5000);
+        }, 6000);
         
    }
 }
