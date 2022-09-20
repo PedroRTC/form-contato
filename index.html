@@ -7,23 +7,27 @@
     <title>Form-Contato</title>
 </head>
 <body>
-    <main>
-        <form action="">
-            <div>
-                <label for="">E-mail</label>
-                <input type="text">
-            </div>
-
-            <div>
-                <label for="">Password</label>
-                <input type="password">
-            </div>
-
-            <section>
-                <input type="checkbox" name="" id="">
-                <label for="">Continuar logado</label>
-            </section>
-        </form>
-    </main>
+        <main>
+            <form action="">
+                <div>
+                    <input type="text" id="input_email" class="input_form" required>
+                    <label for="email" id="label_email" class="label_input">E-mail</label><br>
+                    
+                </div>
+    
+                <div>
+                    <input type="password"id="input_senha" class="input_form" required>
+                    <label for="senha" id="label_senha" class="label_input">Password</label><br>
+                    
+                </div>
+    
+                <section>
+                    <input type="checkbox" class="checkbox">
+                    <label for="">Continuar logado</label>
+                </section>
+                <button id="button_login">Login</button>
+            </form>
+        </main>
+        <script src="js/script.js"></script>
 </body>
 </html>
