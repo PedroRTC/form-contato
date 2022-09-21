@@ -1,5 +1,5 @@
 # Form-contato
-* Criação de formulario para aprender branch com GitHub Desktop
+* Criação de formulario com validação para aprender branch com GitHub Desktop
 * link do projeto na web: [Form-contato](https://form-bleach.netlify.app/)
 
 [![form](https://user-images.githubusercontent.com/110836621/191562134-8a26195c-1548-42ef-9bb0-ac4fd0f28766.png)
